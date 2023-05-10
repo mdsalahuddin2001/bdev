@@ -1,0 +1,22 @@
+/*********************************/
+/*         Navbar                  */
+/*===============================*/
+
+.navbar {
+  @apply absolute top-0 left-0 right-0 z-50 text-white py-7 xl:py-11 font-jost;
+  .nav-center {
+    @apply flex items-center justify-between;
+    .logo {
+      @apply w-[7rem] lg:w-[8rem]  xl:w-auto;
+    }
+    .menus {
+      @apply flex items-center space-x-4;
+      .menu_btn {
+        @apply lg:text-[1.5rem] font-jost flex items-center space-x-4 transition-all duration-300;
+        .menu_btn_line {
+          @apply w-5 xl:w-8 h-[1px] bg-white inline-block ml-4 transition-all duration-300;
+        }
+      }
+    }
+  }
+}

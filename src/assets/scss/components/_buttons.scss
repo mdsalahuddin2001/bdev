@@ -1,0 +1,7 @@
+/********************/
+/*     Buttons      */
+/*==================*/
+/* Note: If you want to add your own colors, you can do so by going to this tailwind.config.js file  */
+.btn {
+  @apply px-10 py-3 text-sm lg:text-base uppercase rounded-[4px] transition-all duration-500 hover:scale-105 bg-primaryOrange text-white cursor-pointer text-center inline-block whitespace-nowrap;
+}

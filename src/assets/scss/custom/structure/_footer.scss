@@ -1,0 +1,21 @@
+/* // _footer.scss */
+
+/*********************************/
+/*         Footer                */
+/*===============================*/
+.footer {
+  .foot-subscribe {
+    input {
+      &::placeholder {
+        @apply text-gray-200;
+      }
+    }
+  }
+}
+.social-icon {
+  &:hover > svg path {
+    // display: none;
+    fill-opacity: 1;
+    transition: 0.3s;
+  }
+}
