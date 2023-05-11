@@ -1,0 +1,8 @@
+.clients-swiper {
+  @apply bg-greyishWhite xl:py-4;
+  .swiper-slide {
+    img {
+      @apply w-[70%] xl:w-[75%];
+    }
+  }
+}

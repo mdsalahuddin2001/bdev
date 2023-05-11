@@ -9,22 +9,34 @@
 /*            02) Swiper slider            */
 //=========================================//
 
-const swiper = new Swiper(".feedbackSwiper", {
-  speed: 1000,
+const swiper = new Swiper(".clients-swiper", {
   spaceBetween: 10,
-  slidesPerView: 1,
+  slidesPerView: 2,
   autoplay: {
-    duration: 3000,
+    delay: 0,
   },
+  speed: 2000,
   loop: true,
   breakpoints: {
-    800: {
-      slidesPerView: 2,
+    768: {
+      slidesPerView: 3,
       spaceBetween: 20,
     },
 
-    1300: {
-      slidesPerView: 3,
+    992: {
+      slidesPerView: 5,
+      spaceBetween: 50,
+    },
+    1020: {
+      slidesPerView: 6,
+      spaceBetween: 50,
+    },
+    1200: {
+      slidesPerView: 7,
+      spaceBetween: 50,
+    },
+    1400: {
+      slidesPerView: 8,
       spaceBetween: 50,
     },
   },
