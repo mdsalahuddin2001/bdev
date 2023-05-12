@@ -54,10 +54,53 @@
                 <!-- search icon -->
 
                 <!-- menu -->
-                <button class="menu_btn group hover:text-primaryOrange">
+                <button
+                  id="menu_open_btn"
+                  class="menu_btn group hover:text-primaryOrange"
+                >
                   Menu
                   <span class="menu_btn_line group-hover:bg-primaryOrange"></span>
                 </button>
+              </div>
+            </div>
+          </div>
+          <div id="nav-menu" class="nav-menu">
+            <div
+              class="menu-wrapper h-full relative w-full before:absolute before:inset-0 before:bg-[url('/assets/images/backgrounds/section_bg.png')] before:bg-no-repeat before:bg-cover"
+            >
+              <div class="container py-7 xl:py-11">
+                <!-- Menu Header -->
+                <div class="nav-center">
+                  <!-- logo -->
+                  <a href="/">
+                    <img src="/assets/images/logo.png" alt="brotecs" class="logo"
+                  /></a>
+                  <div class="menus">
+                    <!-- search icon -->
+
+                    <!-- menu -->
+                    <button
+                      id="menu_close_btn"
+                      class="menu_btn group hover:text-primaryOrange"
+                    >
+                      Close
+                      <span class="menu_btn_line group-hover:bg-primaryOrange"></span>
+                    </button>
+                  </div>
+                </div>
+                <!-- Menu Links -->
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Home</a></li>
+                </ul>
               </div>
             </div>
           </div>
@@ -68,21 +111,21 @@
         <header
         class="relative flex items-center justify-center h-screen  overflow-hidden"
       >
-     <div class="z-50">
+     <div class="z-3">
         <a href="#" class="hero_btn">
             <img src="/assets/images/icons/arrow_bottom_hero.svg" class="rotate-90" alt="arrow">
            <span>Explore Us</span> </a>
      </div>
 
       <!-- overlay -->
-        <div class="absolute z-20 inset-0 bg-gradient-to-b from-[rgba(0,0,0,0.8)] to-[rgba(0,0,0,0.8)]">
+        <div class="absolute z-2 inset-0 bg-gradient-to-b from-[rgba(0,0,0,0.8)] to-[rgba(0,0,0,0.8)]">
         </div>
         <!-- video -->
         <video
           autoplay
           loop
           muted
-          class="absolute z-10 w-auto min-w-full min-h-full max-w-none 3xl:-mt-28"
+          class="absolute z-1 w-auto min-w-full min-h-full max-w-none 2xl:-mt-28"
         >
           <source
             src="/assets/videos/hero.mp4"
