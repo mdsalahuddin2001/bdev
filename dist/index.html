@@ -312,18 +312,6 @@
         <!-- Our Clients Ends -->
         <!-- Footer Start -->
         <footer class="bg-black py-10 xl:py-20">
-          <!-- Messenger Chat Plugin Code -->
-          <div id="fb-root"></div>
-
-          <!-- Your Chat Plugin code -->
-          <div id="fb-customer-chat" class="fb-customerchat"></div>
-
-          <script>
-            var chatbox = document.getElementById("fb-customer-chat");
-            chatbox.setAttribute("page_id", "112367785188593");
-            chatbox.setAttribute("attribution", "biz_inbox");
-          </script>
-
           <div class="container">
             <!-- let's talk -->
             <div
@@ -384,7 +372,7 @@
             </div>
             <!-- let's talk ends -->
             <!-- main footer -->
-            <div class="flex items-end justify-between">
+            <div class="sm:flex items-end justify-between">
               <div>
                 <ul class="flex items-center space-x-10 list-none mb-8 2xl:mb-10">
                   <li class="inline">
@@ -493,34 +481,49 @@
                   </li>
                   <!-- social - github ends -->
                 </ul>
-                <p>&copy; All rights reserved – Brotecs Technologies</p>
+                <p class="hidden sm:block">
+                  &copy; All rights reserved – Brotecs Technologies
+                </p>
               </div>
+              <!-- certifications -->
               <div>
-                <p>Hello</p>
+                <div class="grid grid-cols-3 gap-2 mb-8">
+                  <a href="#" class="bg-white flex items-center justify-center">
+                    <img src="/assets/images/certifications/basis.png" alt="basis" />
+                  </a>
+                  <a href="#" class="bg-white flex items-center justify-center">
+                    <img src="/assets/images/certifications/bacco.png" alt="bacco" />
+                  </a>
+                  <a href="#" class="bg-white flex items-center justify-center">
+                    <img src="/assets/images/certifications/as.png" alt="as" />
+                  </a>
+                  <a href="#" class="bg-white flex items-center justify-center">
+                    <img src="/assets/images/certifications/iso.png" alt="iso" />
+                  </a>
+                  <a href="#" class="bg-white flex items-center justify-center">
+                    <img src="/assets/images/certifications/do.png" alt="do" />
+                  </a>
+                  <a href="#" class="bg-white flex items-center justify-center">
+                    <img src="/assets/images/certifications/iso_2.png" alt="iso" />
+                  </a>
+                </div>
+                <p class="sm:hidden mb-2">
+                  &copy; All rights reserved – Brotecs Technologies
+                </p>
+                <div>
+                  <div class="grid grid-cols-2 gap-2">
+                    <a href="#" class="text-greyishWhite hover:text-white transition"
+                      >Privacy Policy</a
+                    >
+                    <a href="#" class="text-greyishWhite hover:text-white transition"
+                      >Terms & Conditions</a
+                    >
+                  </div>
+                </div>
               </div>
             </div>
             <!-- main footer ends -->
           </div>
-          <!-- Your SDK code -->
-          <script>
-            window.fbAsyncInit = function () {
-              FB.init({
-                xfbml: true,
-                version: "v16.0",
-              });
-            };
-
-            (function (d, s, id) {
-              var js,
-                fjs = d.getElementsByTagName(s)[0];
-              if (d.getElementById(id)) return;
-              js = d.createElement(s);
-              console.log(js, "dekha jak");
-              js.id = id;
-              js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
-              fjs.parentNode.insertBefore(js, fjs);
-            })(document, "script", "facebook-jssdk");
-          </script>
         </footer>
 
         <!-- JAVASCRIPTS -->
