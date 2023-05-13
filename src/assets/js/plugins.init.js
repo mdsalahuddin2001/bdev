@@ -9,7 +9,7 @@
 /*            02) Swiper slider            */
 //=========================================//
 
-const swiper = new Swiper(".clients-swiper", {
+const clientsSwiper = new Swiper(".clients-swiper", {
   spaceBetween: 10,
   slidesPerView: 2,
   autoplay: {
@@ -40,6 +40,34 @@ const swiper = new Swiper(".clients-swiper", {
       spaceBetween: 50,
     },
   },
+});
+const plansSwiper = new Swiper(".plansSwiper", {
+  spaceBetween: 10,
+  slidesPerView: 1,
+
+  speed: 2000,
+  loop: false,
+  center: true,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 0,
+    },
+
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 0,
+    },
+
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 0,
+    },
+    1400: {
+      slidesPerView: 4,
+      spaceBetween: 0,
+    },
+  },
   // If we need pagination
   pagination: {
     el: ".swiper-pagination",
@@ -53,6 +81,8 @@ const swiper = new Swiper(".clients-swiper", {
 
   // And if we need scrollbar
   scrollbar: {
-    el: ".swiper-scrollbar",
+    el: ".swiper-scrollbar.plans-scrollbar",
+    draggable: true,
+    dragSize: 50,
   },
 });

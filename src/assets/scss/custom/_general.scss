@@ -40,3 +40,26 @@ section {
 .section-title {
   @apply text-3xl leading-[2.62rem] lg:text-4xl   xl:text-[2.5rem]  font-medium mb-4 xl:mb-[1.3rem];
 }
+.hide-scroll {
+  @apply overflow-hidden pr-[1.1rem];
+}
+.swiper-scrollbar.swiper-scrollbar-horizontal {
+  height: 8px;
+  left: 100%;
+  transform: translate(-109%, 40px);
+}
+.swiper-scrollbar-drag {
+  // background: none;
+  @apply bg-primaryOrange;
+}
+// .swiper-scrollbar-drag:after {
+//   content: "";
+//   width: auto;
+//   height: auto;
+//   border-radius: 2px;
+//   position: absolute;
+//   top: 0;
+//   left: 50%;
+//   margin: 0 0 0 -20px;
+//   @apply bg-primaryOrange;
+// }

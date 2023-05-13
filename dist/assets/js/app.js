@@ -22,10 +22,12 @@ const menuCloseBtn = document.getElementById("menu_close_btn");
 const navMenu = document.getElementById("nav-menu");
 // show nav menu
 menuOpenBtn.addEventListener("click", () => {
+  // document.body.classList.add("hide-scroll");
   navMenu.classList.add("active");
 });
 // close nav menu
 menuCloseBtn.addEventListener("click", () => {
+  // document.body.classList.remove("hide-scroll");
   navMenu.classList.remove("active");
 });
 
