@@ -31,6 +31,28 @@ menuCloseBtn.addEventListener("click", () => {
   navMenu.classList.remove("active");
 });
 
+// handle dropdown things
+// get all dropdown item
+const dropdownItems = document.querySelectorAll(".dropdown-item");
+dropdownItems.forEach((item) => {
+  item.addEventListener("click", (e) => {
+    //  remove active class from all dropdown items
+    // dropdownItems.forEach((item) => {
+    //   item.classList.remove("active-menu");
+    // });
+
+    const currentIsActive = e.target.classList.contains("active-menu");
+    if (currentIsActive) {
+      e.target.classList.remove("active-menu");
+      return;
+    }
+    dropdownItems.forEach((item) => {
+      item.classList.remove("active-menu");
+    });
+    e.target.classList.add("active-menu");
+  });
+});
+
 /*********************/
 /*   Menu Sticky     */
 /*********************/
