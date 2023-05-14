@@ -1,3 +1,12 @@
-.hero_btn {
-  @apply -rotate-90 absolute bottom-[7rem] right-[-5rem] md:right-[-4rem] lg:right-[-3rem] xl:right-[-2rem] font-jost font-medium text-2xl bg-white/60 px-8  flex items-center space-x-8;
+.hero {
+  @apply relative flex items-center justify-center h-screen max-h-screen  overflow-hidden;
+  .hero_overlay {
+    @apply absolute z-2 inset-0 bg-gradient-to-b from-[rgba(0,0,0,0.8)] to-[rgba(0,0,0,0.8)];
+  }
+  .hero_video {
+    @apply absolute z-1 w-auto min-w-full min-h-full max-w-none 2xl:-mt-[6.4rem];
+  }
+  .hero_btn {
+    @apply -rotate-90 absolute bottom-[7rem] right-[-5rem] md:right-[-4rem] lg:right-[-3rem] xl:right-[-2rem] font-jost font-medium text-2xl bg-white/60 px-8  flex items-center space-x-8;
+  }
 }
