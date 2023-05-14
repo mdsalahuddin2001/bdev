@@ -35,6 +35,9 @@
   width: 100%;
   ul.top-level {
     @apply list-none p-0 m-0 flex justify-between w-full bg-transparent;
+    ul {
+      @apply py-4 min-w-[280px];
+    }
     & > li {
       @apply text-[2rem];
     }
@@ -50,7 +53,7 @@
     li {
       @apply px-4 py-2 whitespace-nowrap;
       > ul {
-        @apply bg-[#3B3B3B]  absolute top-0 left-full  opacity-0 h-full  transition-all duration-300 min-w-0 w-0 -z-50 overflow-visible;
+        @apply bg-[#3B3B3B]  absolute top-0 left-full  opacity-0 h-full  transition-all duration-300 min-w-0 w-0 -z-50 overflow-visible rounded-md;
       }
       // &:hover > ul {
       //   @apply opacity-100  min-w-[200px] z-1;

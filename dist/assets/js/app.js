@@ -44,12 +44,16 @@ dropdownItems.forEach((item) => {
     const currentIsActive = e.target.classList.contains("active-menu");
     if (currentIsActive) {
       e.target.classList.remove("active-menu");
+      e.target.parentNode.style.marginRight = "0px";
       return;
     }
     dropdownItems.forEach((item) => {
       item.classList.remove("active-menu");
+      item.style.marginRight = "0px";
     });
     e.target.classList.add("active-menu");
+    e.target.parentNode.style.transition = "margin 300ms";
+    e.target.parentNode.style.marginRight = "200px";
   });
 });
 
