@@ -47,6 +47,7 @@
 		"js-datepicker": "^5.18.0",
 		"shufflejs": "^6.0.0",
 		"swiper": "4.5.0",
+		"tingle.js": "^0.16.0",
 		"tiny-slider": "^2.9.4",
 		"tobii": "^2.0.0-alpha",
 		"wow.js": "^1.2.2"

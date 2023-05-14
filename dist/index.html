@@ -23,8 +23,6 @@
 
 
         <!-- Css -->
-        <link href="assets/libs/tiny-slider/tiny-slider.css" rel="stylesheet">
-        <link href="assets/libs/tobii/css/tobii.min.css" rel="stylesheet">
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -32,11 +30,23 @@
           href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&family=Poppins:wght@300;400;700&display=swap"
           rel="stylesheet"
         />
+        <!-- tingle css -->
+        <link
+          href="assets/libs/tingle.js/tingle.min.css"
+          type="text/css"
+          rel="stylesheet"
+        />
         <!-- Swiper css -->
         <link
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
         />
+        <!-- idcv modal css -->
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/loadingio/ldCover@v1.0.0/dist/ldcv.min.css"
+        />
+
         <!-- Main Css -->
         <link rel="stylesheet" href="assets/css/tailwind.css" />
 
@@ -201,20 +211,20 @@
   <div class="section-wrapper">
 
     <!-- Services Section  -->
-    <section>
+    <section class="services-section">
       <div class="container">
         <h2 class="section-title">
           Services
         </h2>
-        <div class="lg:flex items-start justify-between gap-10 space-y-8 lg:space-y-0 space-x-2 mb-16">
+        <div class="services-info">
           <p class="max-w-[64rem]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a gallery of type and scrambled it to make a type specimen book.</p>
           <div class="btn">See All Services</div>
         </div>
         <!-- service items -->
 
-        <div class="grid grid-cols-1 lg:grid-cols-3  md:grid-cols-2  gap-[3.75rem]">
+        <div class="service-items">
           <!-- single item starts -->
-          <div class="px-10 2xl:px-12 py-[2.25rem] bg-lightGray rounded-md">
+          <div class="service-item">
               <div>
                   <img src="/assets/images/icons/custom_software.svg" alt="png">
               </div>
@@ -228,7 +238,7 @@
           <!-- single item ends -->
 
           <!-- single item starts -->
-          <div class="px-10 2xl:px-12 py-[2.25rem] bg-lightGray rounded-md">
+          <div class="service-item">
               <div>
                   <img src="/assets/images/icons/embeded_system.svg" alt="png">
               </div>
@@ -241,7 +251,7 @@
           </div>
           <!-- single item ends -->
           <!-- single item starts -->
-          <div class="px-10 2xl:px-12 py-[2.25rem] bg-lightGray rounded-md">
+          <div class="service-item">
               <div>
                   <img src="/assets/images/icons/business_analysis.svg" alt="png">
               </div>
@@ -254,7 +264,7 @@
           </div>
           <!-- single item ends -->
           <!-- single item starts -->
-          <div class="px-10 2xl:px-12 py-[2.25rem] bg-lightGray rounded-md">
+          <div class="service-item">
               <div>
                   <img src="/assets/images/icons/devops_development.svg" alt="png">
               </div>
@@ -267,7 +277,7 @@
           </div>
           <!-- single item ends -->
           <!-- single item starts -->
-          <div class="px-10 2xl:px-12 py-[2.25rem] bg-lightGray rounded-md">
+          <div class="service-item">
               <div>
                   <img src="/assets/images/icons/cyber_security.svg" alt="png">
               </div>
@@ -280,7 +290,7 @@
           </div>
           <!-- single item ends -->
           <!-- single item starts -->
-          <div class="px-10 2xl:px-12 py-[2.25rem] bg-lightGray rounded-md">
+          <div class="service-item">
               <div>
                   <img src="/assets/images/icons/qa.svg" alt="png">
               </div>
@@ -295,6 +305,15 @@
       </div>
         <!-- service items ends -->
       </div>
+      <!-- service modal -->
+<div id="service-modal" class="service-modal">
+  <div class="base w-screen overflow-y-auto overflow-x-hidden rounded-md">
+    <div class="inner w-full p-4 overflow-y-auto">
+      
+    </div>
+  </div>
+</div>
+      <!-- service modal ends -->
     </section>
     <!-- Services Section Ends -->
 
@@ -305,7 +324,7 @@
         <h2 class="section-title">
           Products & Solutions
         </h2>
-        <div class="lg:flex items-start justify-between gap-10 space-y-8 lg:space-y-0 space-x-2 mb-16">
+        <div class="services-info">
           <p class="max-w-[64rem]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a gallery of type and scrambled it to make a type specimen book.</p>
           <div class="btn">See All Services</div>
         </div>
@@ -689,6 +708,9 @@
         <!-- JAVASCRIPTS -->
     <!-- Swiper cdn -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- ldcv modal -->
+    <script src="https://cdn.jsdelivr.net/gh/loadingio/ldCover@v1.0.0/dist/ldcv.min.js"></script>
+    <script src="assets/libs/tingle.js/tingle.min.js"></script>
         <script src="assets/js/plugins.init.js"></script>
         <script src="assets/js/app.js"></script>
         <!-- JAVASCRIPTS -->

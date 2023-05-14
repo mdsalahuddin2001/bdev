@@ -1,0 +1,11 @@
+.services-info {
+  @apply lg:flex items-start justify-between gap-10 space-y-8 lg:space-y-0 space-x-2 mb-16;
+}
+
+.service-items {
+  @apply grid grid-cols-1 lg:grid-cols-3  md:grid-cols-2  gap-[3.75rem];
+
+  .service-item {
+    @apply px-10 2xl:px-12 py-[2.25rem] bg-lightGray rounded-md cursor-pointer hover:scale-[101%] xl:hover:scale-105 transition-all duration-300 ease-in-out;
+  }
+}

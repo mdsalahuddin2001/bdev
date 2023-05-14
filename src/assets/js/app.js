@@ -1,9 +1,9 @@
 /*********************************/
 /*         INDEX                 */
 /*================================
- *     01.  Loader               *
+ *     01.  Toggle Navbar        *
  *     02.  Toggle Menus         *
- *     03.  Active Menu          *
+ *     03.  Service Modal        *
  *     04.  Clickable Menu       *
  *     05.  Back to top          *
  *     06.  Feather icon         *
@@ -58,5 +58,25 @@ dropdownItems.forEach((item) => {
 });
 
 /*********************/
-/*   Menu Sticky     */
+/*   Service Modal     */
 /*********************/
+const services = document.querySelectorAll(".service-item");
+const serviceModalEl = document.querySelector("#service-modal");
+var serviceModal = new ldCover({ root: "#service-modal" });
+
+services.forEach((item) => {
+  item.addEventListener("click", (e) => {
+    console.log(item);
+    serviceModalEl.querySelector(
+      ".inner"
+    ).innerHTML = `<div class="service-items">
+    <div class="service-item">${item.innerHTML}</div>
+    <div class="service-item">${item.innerHTML}</div>
+    <div class="service-item">${item.innerHTML}</div>
+    <div class="service-item">${item.innerHTML}</div>
+    <div class="service-item">${item.innerHTML}</div>
+    <div class="service-item">${item.innerHTML}</div>
+    </div>`;
+    serviceModal.toggle();
+  });
+});
