@@ -25,7 +25,7 @@
   @apply fixed top-0 left-0  bg-darkGray transition-all duration-300 w-full  h-0 z-10 overflow-hidden;
 }
 .nav-menu.active {
-  @apply h-full overflow-x-auto;
+  @apply h-full overflow-y-auto overflow-x-hidden;
 }
 
 .my-menu {
@@ -37,7 +37,7 @@
     @apply marker:text-primaryOrange list-inside list-disc;
   }
   ul.top-level {
-    @apply list-none p-0 m-0 flex justify-between w-full bg-transparent flex-wrap flex-col md:flex-row;
+    @apply list-none p-0 m-0 flex justify-between w-full bg-transparent flex-wrap flex-col md:flex-row space-y-8 md:space-y-0;
     > ul {
       @apply py-4 min-w-[280px];
     }
@@ -50,13 +50,13 @@
     & > li {
       @apply rounded-l-md cursor-pointer text-xl;
       &:hover {
-        @apply bg-[#3B3B3B] transition-all duration-300;
+        @apply text-primaryOrange transition-all duration-300;
       }
     }
     li {
       @apply px-4 py-2 whitespace-nowrap;
       > ul {
-        @apply bg-[#3B3B3B]  lg:absolute top-0 left-full  opacity-0 h-0 lg:h-full  transition-all duration-300 min-w-0 w-0 -z-50 overflow-visible rounded-md;
+        @apply bg-[#3B3B3B]  lg:absolute top-0 left-full h-0 lg:h-auto  lg:min-h-full   transition-all duration-300 min-w-0 w-0 -z-50  overflow-hidden rounded-md  lg:py-8;
       }
       // &:hover > ul {
       //   @apply opacity-100  min-w-[200px] z-1;
@@ -65,7 +65,7 @@
       &.active-menu {
         @apply bg-[#3B3B3B];
         & > ul {
-          @apply opacity-100  min-w-[200px] z-1 h-full;
+          @apply min-w-[250px] z-1 h-auto  overflow-visible;
         }
       }
     }

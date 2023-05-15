@@ -55,7 +55,9 @@ dropdownItems.forEach((item) => {
     e.target.classList.add("active-menu");
 
     e.target.parentNode.style.transition = "margin 300ms";
-    // e.target.parentNode.style.marginRight = "200px";
+    if (window.innerWidth > 1023) {
+      e.target.parentNode.style.marginRight = "250px";
+    }
   });
 });
 
