@@ -77,14 +77,17 @@ body::-webkit-scrollbar-thumb {
   @apply border border-lightGray /* creates padding around scroll thumb */;
 }
 
-body.hide-scroll::-webkit-scrollbar {
-  width: 6px; /* width of the entire scrollbar */
-}
-body.hide-scroll::-webkit-scrollbar-track {
-  @apply bg-transparent transition-all duration-300 /* color of the tracking area */;
-}
-body.hide-scroll::-webkit-scrollbar-thumb {
-  @apply bg-transparent transition-all duration-300; /* color of the scroll thumb */
-  border-radius: 20px; /* roundness of the scroll thumb */
-  @apply border border-transparent transition-all duration-300 /* creates padding around scroll thumb */;
+// body.hide-scroll::-webkit-scrollbar {
+//   width: 6px; /* width of the entire scrollbar */
+// }
+// body.hide-scroll::-webkit-scrollbar-track {
+//   @apply bg-transparent transition-all duration-300 /* color of the tracking area */;
+// }
+// body.hide-scroll::-webkit-scrollbar-thumb {
+//   @apply bg-transparent transition-all duration-300; /* color of the scroll thumb */
+//   border-radius: 20px; /* roundness of the scroll thumb */
+//   @apply border border-transparent transition-all duration-300 /* creates padding around scroll thumb */;
+// }
+.hide-scroll {
+  @apply overflow-hidden;
 }
