@@ -9,6 +9,23 @@
     @apply px-10 2xl:px-12 py-[2.25rem] bg-lightGray rounded-md cursor-pointer hover:scale-[101%] xl:hover:scale-105 transition-all duration-300 ease-in-out;
   }
 }
+.service_details {
+  @apply bg-white/10 p-4 lg:p-6 xl:p-8 2xl:p-10 lg:flex lg:items-start lg:space-x-24 space-y-4 lg:space-y-0 rounded-md mb-8 xl:mb-10 2xl:mb-16;
+  .service_details_left {
+    @apply space-y-2 lg:space-y-0 lg:flex lg:space-x-2 lg:items-start;
+    h4 {
+      @apply text-xl xl:text-[1.38rem] leading-10 font-medium  mb-4 whitespace-nowrap;
+    }
+  }
+  .service_details_right {
+    p {
+      @apply xl:text-lg mb-5 xl:mb-10;
+    }
+    a.go_link {
+      @apply ml-auto flex items-center justify-end text-white hover:text-primaryOrange transition-all text-xs lg:text-base duration-300;
+    }
+  }
+}
 .inner::-webkit-scrollbar {
   width: 6px; /* width of the entire scrollbar */
 }
@@ -19,4 +36,10 @@
   @apply bg-[#383838]; /* color of the scroll thumb */
   border-radius: 20px; /* roundness of the scroll thumb */
   @apply border border-lightGray /* creates padding around scroll thumb */;
+}
+.service-close-container {
+  @apply flex items-center justify-end sticky z-50 top-4;
+  .service-close-btn {
+    @apply text-white hover:text-primaryOrange transition-all;
+  }
 }

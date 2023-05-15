@@ -25,7 +25,7 @@
   @apply fixed top-0 left-0  bg-darkGray transition-all duration-300 w-full  h-0 z-10 overflow-hidden;
 }
 .nav-menu.active {
-  @apply h-full overflow-auto;
+  @apply h-full overflow-x-auto;
 }
 
 .my-menu {

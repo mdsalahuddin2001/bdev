@@ -82,14 +82,29 @@ services.forEach((item, index) => {
     const filtered = services.filter((item, i) => i !== index);
 
     serviceModalEl.querySelector(".inner").innerHTML = `
-    <button onclick="serviceModal.toggle()">Close</button>
-    <div className="container">
+      <div class="service-close-container">
+      <button onclick="serviceModal.toggle()" class="service-close-btn">Close</button>
+    </div>
     <h2 class="section-title container">
     Services
   </h2>
   <div class="services-info container">
     <p class="max-w-[64rem]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a gallery of type and scrambled it to make a type specimen book.</p>
     <div class="btn">See All Services</div>
+  </div>
+  <div class="container">
+  <div class="service_details">
+<!-- left -->
+<div class="service_details_left">
+  <img src="/assets/images/icons/qa.svg" alt="">
+  <h4 class="title">Brotecs is the best</h4>
+</div>
+<!-- right -->
+<div class="service_details_right">
+  <p >Brotecs specialises in software solutions for your business. Our team of experts is passionate about the latest technology to create innovative solutions that help businesses grow and become efficient. Clients from industries like FinTech, healthcare, aviation and manufacturing are among our clients.</p>
+  <a class="go_link" href="#"> <span> Go to this page </span><img src="/assets/images/icons/arrow_right_small.svg" alt=""></a>
+</div>
+</div>
   </div>
     <div class="service-items container">
     ${[item, ...filtered]
