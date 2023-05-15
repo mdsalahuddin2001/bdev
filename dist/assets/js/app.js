@@ -22,12 +22,12 @@ const menuCloseBtn = document.getElementById("menu_close_btn");
 const navMenu = document.getElementById("nav-menu");
 // show nav menu
 menuOpenBtn.addEventListener("click", () => {
-  // document.body.classList.add("hide-scroll");
+  document.body.classList.add("hide-scroll");
   navMenu.classList.add("active");
 });
 // close nav menu
 menuCloseBtn.addEventListener("click", () => {
-  // document.body.classList.remove("hide-scroll");
+  document.body.classList.remove("hide-scroll");
   navMenu.classList.remove("active");
 });
 
@@ -51,9 +51,11 @@ dropdownItems.forEach((item) => {
       item.classList.remove("active-menu");
       item.style.marginRight = "0px";
     });
+
     e.target.classList.add("active-menu");
+
     e.target.parentNode.style.transition = "margin 300ms";
-    e.target.parentNode.style.marginRight = "200px";
+    // e.target.parentNode.style.marginRight = "200px";
   });
 });
 

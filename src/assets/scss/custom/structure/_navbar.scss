@@ -25,7 +25,7 @@
   @apply fixed top-0 left-0  bg-darkGray transition-all duration-300 w-full  h-0 z-10 overflow-hidden;
 }
 .nav-menu.active {
-  @apply h-full;
+  @apply h-full overflow-auto;
 }
 
 .my-menu {
@@ -33,9 +33,12 @@
   // holder and ul general style
   box-sizing: border-box;
   width: 100%;
+  ul {
+    @apply marker:text-primaryOrange list-inside list-disc;
+  }
   ul.top-level {
-    @apply list-none p-0 m-0 flex justify-between w-full bg-transparent;
-    ul {
+    @apply list-none p-0 m-0 flex justify-between w-full bg-transparent flex-wrap flex-col md:flex-row;
+    > ul {
       @apply py-4 min-w-[280px];
     }
     & > li {
@@ -53,7 +56,7 @@
     li {
       @apply px-4 py-2 whitespace-nowrap;
       > ul {
-        @apply bg-[#3B3B3B]  absolute top-0 left-full  opacity-0 h-full  transition-all duration-300 min-w-0 w-0 -z-50 overflow-visible rounded-md;
+        @apply bg-[#3B3B3B]  lg:absolute top-0 left-full  opacity-0 h-0 lg:h-full  transition-all duration-300 min-w-0 w-0 -z-50 overflow-visible rounded-md;
       }
       // &:hover > ul {
       //   @apply opacity-100  min-w-[200px] z-1;
@@ -62,7 +65,7 @@
       &.active-menu {
         @apply bg-[#3B3B3B];
         & > ul {
-          @apply opacity-100  min-w-[200px] z-1;
+          @apply opacity-100  min-w-[200px] z-1 h-full;
         }
       }
     }
@@ -71,4 +74,17 @@
 
 .show-menu-list {
   @apply opacity-100  min-w-[200px] z-1;
+}
+
+// Custom Scrollbar
+.nav-menu::-webkit-scrollbar {
+  width: 6px; /* width of the entire scrollbar */
+}
+.nav-menu::-webkit-scrollbar-track {
+  @apply bg-darkGray /* color of the tracking area */;
+}
+.nav-menu::-webkit-scrollbar-thumb {
+  @apply bg-[#383838]; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  @apply border border-lightGray /* creates padding around scroll thumb */;
 }
