@@ -67,9 +67,9 @@ var serviceModal = new ldCover({ root: "#service-modal" });
 services.forEach((item) => {
   item.addEventListener("click", (e) => {
     console.log(item);
-    serviceModalEl.querySelector(
-      ".inner"
-    ).innerHTML = `<div class="service-items">
+    serviceModalEl.querySelector(".inner").innerHTML = `
+    <button onclick="serviceModal.toggle()">Close</button>
+    <div class="service-items container">
     <div class="service-item">${item.innerHTML}</div>
     <div class="service-item">${item.innerHTML}</div>
     <div class="service-item">${item.innerHTML}</div>

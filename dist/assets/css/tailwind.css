@@ -668,9 +668,6 @@ video {
 .w-screen {
   width: 100vw !important;
 }
-.w-\[100vw\] {
-  width: 100vw !important;
-}
 .w-full {
   width: 100% !important;
 }
@@ -679,9 +676,6 @@ video {
 }
 .w-screen {
   width: 100vw !important;
-}
-.w-\[\] {
-  width:  !important;
 }
 .w-full {
   width: 100% !important;
@@ -803,6 +797,10 @@ video {
 .bg-primaryOrange {
   --tw-bg-opacity: 1 !important;
   background-color: rgb(248 95 0 / var(--tw-bg-opacity)) !important;
+}
+.bg-darkGray {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(37 37 37 / var(--tw-bg-opacity)) !important;
 }
 .bg-\[\#A6A6A6\]\/10 {
   background-color: rgb(166 166 166 / 0.1) !important;
