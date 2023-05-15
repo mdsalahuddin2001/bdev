@@ -60,23 +60,47 @@ dropdownItems.forEach((item) => {
 /*********************/
 /*   Service Modal     */
 /*********************/
-const services = document.querySelectorAll(".service-item");
+const services = [...document.querySelectorAll(".service-item")];
 const serviceModalEl = document.querySelector("#service-modal");
 var serviceModal = new ldCover({ root: "#service-modal" });
+// when modal is open
+function whenModalOpen() {
+  document.body.classList.add("hide-scroll");
+}
+serviceModal.on("toggle.on", whenModalOpen);
+// when modal is close
+function whenModalClose() {
+  document.body.classList.remove("hide-scroll");
+}
+serviceModal.on("toggle.off", whenModalClose);
 
-services.forEach((item) => {
+services.forEach((item, index) => {
   item.addEventListener("click", (e) => {
-    console.log(item);
+    // all items except current item, and we know th "item" is the current one
+    const filtered = services.filter((item, i) => i !== index);
+
     serviceModalEl.querySelector(".inner").innerHTML = `
     <button onclick="serviceModal.toggle()">Close</button>
+    <div className="container">
+    <h2 class="section-title container">
+    Services
+  </h2>
+  <div class="services-info container">
+    <p class="max-w-[64rem]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a gallery of type and scrambled it to make a type specimen book.</p>
+    <div class="btn">See All Services</div>
+  </div>
     <div class="service-items container">
-    <div class="service-item">${item.innerHTML}</div>
-    <div class="service-item">${item.innerHTML}</div>
-    <div class="service-item">${item.innerHTML}</div>
-    <div class="service-item">${item.innerHTML}</div>
-    <div class="service-item">${item.innerHTML}</div>
-    <div class="service-item">${item.innerHTML}</div>
+    ${[item, ...filtered]
+      .map((item) => {
+        return `
+    <div class="service-item">
+    ${item.innerHTML}
     </div>`;
+      })
+      .join("")}
+    </div>
+    </div>
+   `;
     serviceModal.toggle();
   });
 });

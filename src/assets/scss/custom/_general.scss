@@ -40,9 +40,7 @@ section {
 .section-title {
   @apply text-3xl leading-[2.62rem] lg:text-4xl   xl:text-[2.5rem]  font-medium mb-4 xl:mb-[1.3rem];
 }
-.hide-scroll {
-  @apply overflow-hidden pr-[1.1rem];
-}
+
 .swiper-scrollbar.swiper-scrollbar-horizontal {
   height: 8px;
   left: 100%;
@@ -66,3 +64,27 @@ section {
 //   margin: 0 0 0 -20px;
 //   @apply bg-primaryOrange;
 // }
+// custom scrollbar
+body::-webkit-scrollbar {
+  width: 6px; /* width of the entire scrollbar */
+}
+body::-webkit-scrollbar-track {
+  @apply bg-darkGray /* color of the tracking area */;
+}
+body::-webkit-scrollbar-thumb {
+  @apply bg-[#383838]; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  @apply border border-lightGray /* creates padding around scroll thumb */;
+}
+
+body.hide-scroll::-webkit-scrollbar {
+  width: 6px; /* width of the entire scrollbar */
+}
+body.hide-scroll::-webkit-scrollbar-track {
+  @apply bg-transparent transition-all duration-300 /* color of the tracking area */;
+}
+body.hide-scroll::-webkit-scrollbar-thumb {
+  @apply bg-transparent transition-all duration-300; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  @apply border border-transparent transition-all duration-300 /* creates padding around scroll thumb */;
+}

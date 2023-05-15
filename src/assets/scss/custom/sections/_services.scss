@@ -9,3 +9,14 @@
     @apply px-10 2xl:px-12 py-[2.25rem] bg-lightGray rounded-md cursor-pointer hover:scale-[101%] xl:hover:scale-105 transition-all duration-300 ease-in-out;
   }
 }
+.inner::-webkit-scrollbar {
+  width: 6px; /* width of the entire scrollbar */
+}
+.inner::-webkit-scrollbar-track {
+  @apply bg-darkGray /* color of the tracking area */;
+}
+.inner::-webkit-scrollbar-thumb {
+  @apply bg-[#383838]; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  @apply border border-lightGray /* creates padding around scroll thumb */;
+}
