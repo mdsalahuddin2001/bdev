@@ -41,10 +41,10 @@ dropdownItems.forEach((item) => {
     //   item.classList.remove("active-menu");
     // });
 
-    const currentIsActive = e.target.classList.contains("active-menu");
+    const currentIsActive = e.currentTarget.classList.contains("active-menu");
     if (currentIsActive) {
-      e.target.classList.remove("active-menu");
-      e.target.parentNode.style.marginRight = "0px";
+      e.currentTarget.classList.remove("active-menu");
+      e.currentTarget.parentNode.style.marginRight = "0px";
       return;
     }
     dropdownItems.forEach((item) => {
@@ -52,11 +52,11 @@ dropdownItems.forEach((item) => {
       item.style.marginRight = "0px";
     });
 
-    e.target.classList.add("active-menu");
+    e.currentTarget.classList.add("active-menu");
 
-    e.target.parentNode.style.transition = "margin 300ms";
-    if (window.innerWidth > 1023) {
-      e.target.parentNode.style.marginRight = "250px";
+    e.currentTarget.parentNode.style.transition = "margin 300ms";
+    if (window.innerWidth > 1279) {
+      e.currentTarget.parentNode.style.marginRight = "280px";
     }
   });
 });
@@ -82,7 +82,9 @@ services.forEach((item, index) => {
   item.addEventListener("click", (e) => {
     // all items except current item, and we know th "item" is the current one
     const filtered = services.filter((item, i) => i !== index);
-
+    // contents from item
+    const img = item.querySelector("img");
+    const title = item.querySelector("h4");
     serviceModalEl.querySelector(".inner").innerHTML = `
       <div class="service-close-container">
       <button onclick="serviceModal.toggle()" class="service-close-btn">Close</button>
@@ -98,8 +100,8 @@ services.forEach((item, index) => {
   <div class="service_details">
 <!-- left -->
 <div class="service_details_left">
-  <img src="/assets/images/icons/qa.svg" alt="">
-  <h4 class="title">Brotecs is the best</h4>
+  ${img.outerHTML}
+  <h4 class="title">${title.innerHTML}</h4>
 </div>
 <!-- right -->
 <div class="service_details_right">
