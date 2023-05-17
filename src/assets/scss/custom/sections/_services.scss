@@ -1,5 +1,8 @@
 .services-info {
   @apply lg:flex items-start justify-between gap-10 space-y-8 lg:space-y-0 space-x-2 mb-16;
+  p {
+    @apply font-giloryMedium font-medium;
+  }
 }
 
 .service-items {

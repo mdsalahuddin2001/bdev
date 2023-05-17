@@ -796,8 +796,8 @@ video {
 .text-center {
   text-align: center !important;
 }
-.font-jost {
-  font-family: "Jost", sans-serif !important;
+.font-giloryBold {
+  font-family: "Gilory-Bold", sans-serif !important;
 }
 .text-xl {
   font-size: 1.25rem !important;
@@ -864,6 +864,22 @@ video {
           transition-duration: 150ms !important;
 }
 /* // _general.scss */
+@font-face {
+  font-family: "Gilory-Regular";
+  src: url("assets/fonts/gilory/Gilory-Regular.ttf");
+}
+@font-face {
+  font-family: "Gilory-Bold";
+  src: url("assets/fonts/gilory/Gilory-Bold.ttf");
+}
+@font-face {
+  font-family: "Gilory-Medium";
+  src: url("/assets/fonts/gilory/Gilory-Medium.ttf");
+}
+@font-face {
+  font-family: "Gilory-Semibold";
+  src: url("/assets/fonts/gilory/Gilory-Semibold.ttf");
+}
 /*********************************/
 /*             General            */
 /*===============================*/
@@ -947,8 +963,9 @@ section {
 
 .section-title {
   margin-bottom: 1rem;
+  font-family: "Gilory-Bold", sans-serif;
   font-size: 1.875rem;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 2.62rem;
 }
 
@@ -1218,8 +1235,10 @@ body::-webkit-scrollbar-thumb {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   text-align: center;
+  font-family: "Jost", sans-serif;
   font-size: 0.875rem;
   line-height: 1.25rem;
+  font-weight: 500;
   text-transform: uppercase;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1468,7 +1487,8 @@ body::-webkit-scrollbar-thumb {
   }
 }
 .my-menu ul.top-level ul {
-  font-family: "Poppins", sans-serif;
+  font-family: "Gilory-Semibold", sans-serif;
+  font-weight: 500;
 }
 .my-menu ul.top-level > ul {
   width: auto;
@@ -1488,7 +1508,7 @@ body::-webkit-scrollbar-thumb {
   font-size: 1.5rem;
   line-height: 2rem;
   --tw-text-opacity: 1;
-  color: rgb(214 214 214 / var(--tw-text-opacity));
+  color: rgb(169 169 169 / var(--tw-text-opacity));
 }
 .my-menu ul.second-level > li {
   cursor: pointer;
@@ -1770,6 +1790,10 @@ body::-webkit-scrollbar-thumb {
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
+}
+.services-info p {
+  font-family: "Gilory-Medium", sans-serif;
+  font-weight: 500;
 }
 
 .service-items {

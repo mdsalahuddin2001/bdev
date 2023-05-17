@@ -45,7 +45,7 @@
   ul.top-level {
     @apply list-none p-0 m-0 flex xl:justify-start 2xl:justify-center w-full bg-transparent flex-wrap xl:flex-nowrap flex-col md:flex-row md:space-y-0 gap-6 lg:gap-x-12 xl:gap-x-20;
     ul {
-      @apply font-poppins;
+      @apply font-gilorySemibold font-medium;
     }
     > ul {
       @apply py-4 min-w-[280px] w-auto;
@@ -55,7 +55,7 @@
     }
   }
   ul.second-level {
-    @apply relative mt-8  list-disc min-w-[280px] w-auto text-2xl text-greyishWhite;
+    @apply relative mt-8  list-disc min-w-[280px] w-auto text-2xl text-[#A9A9A9];
     & > li {
       @apply rounded-md xl:rounded-none xl:rounded-l-md cursor-pointer;
     }
