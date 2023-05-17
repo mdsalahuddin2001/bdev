@@ -20,10 +20,10 @@ module.exports = {
     fontFamily: {
       jost: ['"Jost", sans-serif'],
       poppins: ['"Poppins", sans-serif'],
-      giloryBold: ['"Gilory-Bold", sans-serif'],
-      giloryRegular: ['"Gilory-Regular", sans-serif'],
-      giloryMedium: ['"Gilory-Medium", sans-serif'],
-      gilorySemibold: ['"Gilory-Semibold", sans-serif'],
+      gilroyBold: ['"Gilroy-Bold", sans-serif'],
+      gilroyRegular: ['"Gilroy-Regular", sans-serif'],
+      gilroyMedium: ['"Gilroy-Medium", sans-serif'],
+      gilroySemibold: ['"Gilroy-Semibold", sans-serif'],
     },
     container: {
       center: true,

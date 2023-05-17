@@ -796,8 +796,14 @@ video {
 .text-center {
   text-align: center !important;
 }
-.font-giloryBold {
-  font-family: "Gilory-Bold", sans-serif !important;
+.font-gilroyBold {
+  font-family: "Gilroy-Bold", sans-serif !important;
+}
+.font-gilroyRegular {
+  font-family: "Gilroy-Regular", sans-serif !important;
+}
+.font-gilroySemibold {
+  font-family: "Gilroy-Semibold", sans-serif !important;
 }
 .text-xl {
   font-size: 1.25rem !important;
@@ -865,20 +871,20 @@ video {
 }
 /* // _general.scss */
 @font-face {
-  font-family: "Gilory-Regular";
-  src: url("assets/fonts/gilory/Gilory-Regular.ttf");
+  font-family: "Gilroy-Regular";
+  src: url("/assets/fonts/gilroy/Gilroy-Regular.ttf");
 }
 @font-face {
-  font-family: "Gilory-Bold";
-  src: url("assets/fonts/gilory/Gilory-Bold.ttf");
+  font-family: "Gilroy-Bold";
+  src: url("/assets/fonts/gilroy/Gilroy-Bold.ttf");
 }
 @font-face {
-  font-family: "Gilory-Medium";
-  src: url("/assets/fonts/gilory/Gilory-Medium.ttf");
+  font-family: "Gilroy-Medium";
+  src: url("/assets/fonts/gilroy/Gilroy-Medium.ttf");
 }
 @font-face {
-  font-family: "Gilory-Semibold";
-  src: url("/assets/fonts/gilory/Gilory-Semibold.ttf");
+  font-family: "Gilroy-Semibold";
+  src: url("/assets/fonts/gilroy/Gilroy-Semibold.ttf");
 }
 /*********************************/
 /*             General            */
@@ -963,7 +969,7 @@ section {
 
 .section-title {
   margin-bottom: 1rem;
-  font-family: "Gilory-Bold", sans-serif;
+  font-family: "Gilroy-Bold", sans-serif;
   font-size: 1.875rem;
   font-weight: 700;
   line-height: 2.62rem;
@@ -1487,8 +1493,8 @@ body::-webkit-scrollbar-thumb {
   }
 }
 .my-menu ul.top-level ul {
-  font-family: "Gilory-Semibold", sans-serif;
-  font-weight: 500;
+  font-family: "Gilroy-Semibold", sans-serif;
+  font-weight: 600;
 }
 .my-menu ul.top-level > ul {
   width: auto;
@@ -1497,7 +1503,13 @@ body::-webkit-scrollbar-thumb {
   padding-bottom: 1rem;
 }
 .my-menu ul.top-level > li {
-  font-size: 2rem;
+  font-size: 1.5rem;
+}
+@media (min-width: 1536px) {
+
+  .my-menu ul.top-level > li {
+    font-size: 2rem;
+  }
 }
 .my-menu ul.second-level {
   position: relative;
@@ -1505,10 +1517,24 @@ body::-webkit-scrollbar-thumb {
   width: auto;
   min-width: 280px;
   list-style-type: disc;
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
   --tw-text-opacity: 1;
   color: rgb(169 169 169 / var(--tw-text-opacity));
+}
+@media (min-width: 1024px) {
+
+  .my-menu ul.second-level {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+@media (min-width: 1536px) {
+
+  .my-menu ul.second-level {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
 }
 .my-menu ul.second-level > li {
   cursor: pointer;
@@ -1792,7 +1818,7 @@ body::-webkit-scrollbar-thumb {
   }
 }
 .services-info p {
-  font-family: "Gilory-Medium", sans-serif;
+  font-family: "Gilroy-Medium", sans-serif;
   font-weight: 500;
 }
 

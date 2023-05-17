@@ -1,20 +1,20 @@
 /* // _general.scss */
 // import fonts
 @font-face {
-  font-family: "Gilory-Regular";
-  src: url("assets/fonts/gilory/Gilory-Regular.ttf");
+  font-family: "Gilroy-Regular";
+  src: url("/assets/fonts/gilroy/Gilroy-Regular.ttf");
 }
 @font-face {
-  font-family: "Gilory-Bold";
-  src: url("assets/fonts/gilory/Gilory-Bold.ttf");
+  font-family: "Gilroy-Bold";
+  src: url("/assets/fonts/gilroy/Gilroy-Bold.ttf");
 }
 @font-face {
-  font-family: "Gilory-Medium";
-  src: url("/assets/fonts/gilory/Gilory-Medium.ttf");
+  font-family: "Gilroy-Medium";
+  src: url("/assets/fonts/gilroy/Gilroy-Medium.ttf");
 }
 @font-face {
-  font-family: "Gilory-Semibold";
-  src: url("/assets/fonts/gilory/Gilory-Semibold.ttf");
+  font-family: "Gilroy-Semibold";
+  src: url("/assets/fonts/gilroy/Gilroy-Semibold.ttf");
 }
 /*********************************/
 /*             General            */
@@ -55,7 +55,7 @@ section {
   @apply py-10 xl:py-16;
 }
 .section-title {
-  @apply text-3xl leading-[2.62rem] lg:text-4xl   xl:text-[2.5rem]   mb-4 xl:mb-[1.3rem] font-giloryBold font-bold;
+  @apply text-3xl leading-[2.62rem] lg:text-4xl   xl:text-[2.5rem]   mb-4 xl:mb-[1.3rem] font-gilroyBold font-bold;
 }
 
 .swiper-scrollbar.swiper-scrollbar-horizontal {
